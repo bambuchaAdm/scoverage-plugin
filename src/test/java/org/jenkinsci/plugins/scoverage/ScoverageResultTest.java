@@ -1,8 +1,8 @@
 package org.jenkinsci.plugins.scoverage;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class ScoverageResultTest {
     private ScoverageResult result = new ScoverageResult(95.27, 50.0, 1);

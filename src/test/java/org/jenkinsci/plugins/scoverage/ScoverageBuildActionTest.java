@@ -1,8 +1,10 @@
 package org.jenkinsci.plugins.scoverage;
 
-import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertEquals;
+
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class ScoverageBuildActionTest {
     private ScoverageResult result = new ScoverageResult(95.27, 50.0, 1);
@@ -15,7 +17,7 @@ public class ScoverageBuildActionTest {
 
     @Test
     public void resultTest() {
-        assertEquals(action.getResult().getStatement(), 95.27);
+        assertEquals(action.getResult().getStatement(), 95.27, 0.005);
     }
 
 }

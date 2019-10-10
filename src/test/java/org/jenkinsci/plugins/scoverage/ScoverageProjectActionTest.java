@@ -2,9 +2,9 @@ package org.jenkinsci.plugins.scoverage;
 
 import hudson.model.AbstractProject;
 import org.mockito.Mockito;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class ScoverageProjectActionTest {
     AbstractProject project = Mockito.mock(AbstractProject.class);

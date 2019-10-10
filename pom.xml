@@ -4,11 +4,12 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>1.609.1</version>
+        <version>3.50</version>
+        <relativePath />
     </parent>
 
     <artifactId>scoverage</artifactId>
-    <version>1.4.0</version>
+    <version>2.0.0</version>
     <name>Scoverage Plugin</name>
     <packaging>hpi</packaging>
     <url>http://wiki.jenkins-ci.org/display/JENKINS/Scoverage+Plugin</url>
@@ -40,21 +41,32 @@
         </snapshotRepository>
     </distributionManagement>
 
+    <properties>
+        <jenkins.version>2.138.4</jenkins.version>
+        <java.level>8</java.level>
+    </properties>
+
     <dependencies>
+        <dependency>
+            <groupId>io.jenkins.plugins</groupId>
+            <artifactId>code-coverage-api</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>cobertura</artifactId>
+            <version>1.14</version>
+        </dependency>
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
         </dependency>
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.8.17</version>
-        </dependency>
-        <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
-            <version>2.0.3-beta</version>
+            <version>2.28.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

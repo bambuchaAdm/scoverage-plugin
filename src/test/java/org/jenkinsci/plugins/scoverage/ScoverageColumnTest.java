@@ -2,11 +2,11 @@ package org.jenkinsci.plugins.scoverage;
 
 import hudson.model.Job;
 import hudson.model.Run;
+import org.junit.Test;
 import org.mockito.Mockito;
-import org.testng.annotations.Test;
 
 import static org.mockito.Mockito.when;
-import static org.testng.AssertJUnit.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class ScoverageColumnTest {
     Job job = Mockito.mock(Job.class);

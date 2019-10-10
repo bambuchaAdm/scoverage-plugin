@@ -1,7 +1,8 @@
 package org.jenkinsci.plugins.scoverage;
 
 import hudson.FilePath;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
 
 import java.io.File;
 
